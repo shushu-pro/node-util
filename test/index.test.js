@@ -1,5 +1,5 @@
 import ijest from 'ijest'
-import base from './children/base'
+import netTest from './children/net'
 import { getPortUnused } from '../src/index'
 
 // document
@@ -23,7 +23,7 @@ ijest({
 
   // 所有测试用例
   tests: {
-    base,
+    net: netTest,
   },
 
   // 自定义断言
